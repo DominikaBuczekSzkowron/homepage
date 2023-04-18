@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.header {
+    color: #095ebe8c;
+    text-align: center;
+}
+
+.body {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 20px auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.25;
+}
+
+.aside_image {
+    border: 7px double grey;
+    border-left: 10px solid grey;
+    border-radius: 0 50% 50% 0;
+    padding: 10px;
+    margin: 30px;
+    box-shadow: 15px -15px 37px -2px #7e7e89;
+}

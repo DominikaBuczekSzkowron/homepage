@@ -1,0 +1,14 @@
+.section_description {
+    color: #09096e88;
+}
+
+.section__background {
+    background-color: #eee;
+    color: #111;
+    padding: 0 10px;
+}
+
+.section__background-black {
+    color: #eee;
+    background-color: #111;
+}

@@ -1,0 +1,32 @@
+.navigation__item {
+    margin: 10px;
+}
+
+.navigation__list {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.navigation__links {
+    padding: 4px;
+    color: #eee;
+    background-color: #808080;
+    text-decoration: none;
+}
+
+.navigation__links:visited {
+    background-color: #666464;
+}
+
+.navigation__links:focus {
+    background-color: #7E7E89;
+}
+
+.navigation__links:hover {
+    background-color: #43438f;
+}
+
+.navigation__links:active {
+    color: #111;
+    background-color: #d7d7e2;
+}
