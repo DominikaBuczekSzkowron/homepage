@@ -1,21 +1,35 @@
-console.log("Cześć!");
-
-let aside__button= document.querySelector(".js-aside__button");
-let aside_image= document.querySelector(".js-aside_image");
-
-aside__button.addEventListener("click", () => {
-    if (aside_image.style.display === "none") {
-        aside_image.style.display = "block";
-        aside__button.innerText = "Schowaj zdjęcie"
-    } else {
-        aside_image.style.display = "none";
-        aside__button.innerText = "Pokaż zdjęcie"
+{
+    const welcome = () => {
+        console.log("Cześć! Moje powitanie jest już funkcją!");
     }
-})
 
-let section__button = document.querySelector(".js-section__button");
-let section__background = document.querySelector(".js-section__background");
-section__button.addEventListener("click", () => {
-    section__background.classList.toggle("section__background-black");
-});
+    const onHideImageClick = () => {
+        const image = document.querySelector(".js-aside_image");
 
+        if (image.style.display === "none") {
+            image.style.display = "block";
+            HideImageButton.innerText = "Schowaj zdjęcie"
+        } else {
+            image.style.display = "none";
+            HideImageButton.innerText = "Pokaż zdjęcie";
+        }
+    }
+
+    const initImage = () => {
+        HideImageButton.addEventListener("click", onHideImageClick);
+    }
+    const HideImageButton = document.querySelector(".js-aside__button");
+
+    const onChangeBackgrounClick = () => {
+        const ParagraphBackground = document.querySelector(".js-section__background");
+        ParagraphBackground.classList.toggle("section__background-black");
+    }
+
+    const initChangeButton = () => {
+        const changeBackgroundButton = document.querySelector(".js-section__button");
+        changeBackgroundButton.addEventListener("click", onChangeBackgrounClick);
+    }
+    welcome();
+    initChangeButton()
+    initImage()
+}
