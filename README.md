@@ -3,4 +3,4 @@
 ## Demo
 https://dominikabuczekszkowron.github.io/homepage/
 ## Description
-Welcome in my first page ever. 
+Welcome in my first website ever. 
