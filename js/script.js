@@ -4,29 +4,29 @@
     }
 
     const onHideImageClick = () => {
-        const image = document.querySelector(".js-aside_image");
+        const image = document.querySelector(".js-asideImage");
 
         if (image.style.display === "none") {
             image.style.display = "block";
-            HideImageButton.innerText = "Schowaj zdjęcie"
+            hideImageButton.innerText = "Schowaj zdjęcie"
         } else {
             image.style.display = "none";
-            HideImageButton.innerText = "Pokaż zdjęcie";
+            hideImageButton.innerText = "Pokaż zdjęcie";
         }
     }
 
     const initImage = () => {
-        HideImageButton.addEventListener("click", onHideImageClick);
+        hideImageButton.addEventListener("click", onHideImageClick);
     }
-    const HideImageButton = document.querySelector(".js-aside__button");
+    const hideImageButton = document.querySelector(".js-asideButton");
 
     const onChangeBackgrounClick = () => {
-        const ParagraphBackground = document.querySelector(".js-section__background");
-        ParagraphBackground.classList.toggle("section__background-black");
+        const paragraphBackground = document.querySelector(".js-sectionBackground");
+        paragraphBackground.classList.toggle("section__background--black");
     }
 
     const initChangeButton = () => {
-        const changeBackgroundButton = document.querySelector(".js-section__button");
+        const changeBackgroundButton = document.querySelector(".js-sectionButton");
         changeBackgroundButton.addEventListener("click", onChangeBackgrounClick);
     }
     welcome();

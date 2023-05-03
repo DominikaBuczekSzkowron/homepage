@@ -5,7 +5,7 @@
 }
 
 
-.table__row--cellBorder {
+.table__cell {
     border: 1px solid grey;
     padding: 3px;
     text-align: center;
@@ -17,11 +17,11 @@
     font-weight: bold;
 }
 
-.table__header {
+.table__cell--header {
     background-color: #c0bfbf
 }
 
-.table__header--main {
+.table__cell--mainHeader {
     max-width: 80px;
     background-color: #c0bfbf
 }
