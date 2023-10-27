@@ -1,200 +1,364 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moja pierwsza strona</title>
-    <link rel="icon" href="images/icon.png">
-    <meta property="og:image" content="images/share.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/navigation.css" rel="stylesheet">
-    <link href="css/table.css" rel="stylesheet">
-    <link href="css/section.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link rel="icon" href="images/icon.png" />
+    <meta property="og:image" content="images/share.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/navigation.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="js/script.js"></script>
-</head>
+  </head>
 
-<body class="body">
+  <body class="body">
+    <button class="js-button_languageChanger">język angielski</button>
     <header>
-        <h1 class="header">Dominika Buczek-Szkowron</h1>
+      <h1 class="header">Dominika Buczek-Szkowron</h1>
     </header>
     <nav class="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__links" href="#o-mnie">O mnie.</a></li>
-            <li class="navigation__item"><a class="navigation__links" href="#doswiadczenie-zawodowe">Doświaczenie
-                    zawodowe</a></li>
-            <li class="navigation__item"><a class="navigation__links" href="#wyksztalcenie">Wykształcenie</a></li>
-            <li class="navigation__item"><a class="navigation__links" href="#zainteresowania">Zainteresowania</a></li>
-            <li class="navigation__item"><a class="navigation__links" href="#schroniskaGórskie">Schroniska górskie</a>
-            </li>
-        </ul>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__links" id="nav_aboutMe" href="#o-mnie"
+            >O mnie.</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            class="navigation__links"
+            id="nav_experience"
+            href="#doswiadczenie-zawodowe"
+            >Doświaczenie zawodowe</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__links" href="#wyksztalcenie">Wykształcenie</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__links" href="#zainteresowania"
+            >Zainteresowania</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__links" href="#schroniskaGórskie"
+            >Schroniska górskie</a
+          >
+        </li>
+      </ul>
     </nav>
     <main>
-        <aside class="aside">
-            <img class="js-asideImage aside_image" width="200"
-                src="https://i.postimg.cc/GhbFT7Ln/zdj-cie-na-slacka.png" alt="Dominika Buczek-Szkowron">
-            <p>
-                <button class="js-asideButton aside__button">Schowaj zdjęcie</button>
-            </p>
-            <p><i>"Jeśli tylko zamienić marzenia na plany, wszystko staje się możliwe"</i></p>
-        </aside>
+      <aside class="aside">
+        <img
+          class="js-asideImage aside_image"
+          width="200"
+          src="https://i.postimg.cc/GhbFT7Ln/zdj-cie-na-slacka.png"
+          alt="Dominika Buczek-Szkowron"
+        />
+        <p>
+          <button class="js-asideButton aside__button">Schowaj zdjęcie</button>
+        </p>
+        <p>
+          <i
+            >"Jeśli tylko zamienić marzenia na plany, wszystko staje się
+            możliwe"</i
+          >
+        </p>
+      </aside>
 
-        <section class="js-sectionBackground section__background">
-            <h2 id="o-mnie"> O mnie</h2>
-            <p>Cześć! Z zawodu budowlaniec, szczęśliwa żona, mama trójki dzieci.<br> Z wielką radością rozpoczynam naukę
-                programowania. Mam nadzieję, że IT mnie polubi 😎
-            </p>
-            <button class="js-sectionButton section__button">Zmień tło</button>
-        </section>
+      <section class="js-sectionBackground section__background">
+        <h2 id="o-mnie">O mnie</h2>
+        <p>
+          Cześć! Z zawodu budowlaniec, szczęśliwa żona, mama trójki dzieci.<br />
+          Z wielką radością rozpoczynam naukę programowania. Mam nadzieję, że IT
+          mnie polubi 😎
+        </p>
+        <button class="js-sectionButton section__button">Zmień tło</button>
+      </section>
 
-        <section>
-            <h2 id="doswiadczenie-zawodowe">Doświaczenie zawodowe</h2>
-            <h3>Multikon Sp. z o.o.</h3>
-            <h4>Asystentka projektanta</h4>
-            <ul>
-                <li>Wykonywanie rysunków wykonawczych <span class="section_description">żelbetowych elementów
-                        prefabrykowanych</span> w
-                    programach <strong>AutoCad</strong>
-                    oraz <strong>Tekla Structures</strong></li>
-            </ul>
-            <h3>Albis Biuro Budowlane</h3>
-            <h4>Asystentka projektanta</h4>
-            <ul>
-                <li>Przygotowanie dokumentacji do pozwolenia na budowę oraz projektów wykonawczych;</li>
-                <li>Wykonywanie rysunków budowlanych, głównie konstrukcyjnych: <span
-                        class="section_description">konstrukcje stalowe; konstrukcje żelbetowe</span>;</li>
-                <li>Wykonywanie obliczeń statyczno-wytrzymałościowych;</li>
-                <li><b>Praca w zespole projektowym oraz samodzielna</b> (w zależności od wielkości zadania);</li>
-                <li><b>Współpraca i kontakt z firmami architektonicznymi oraz wykonawczymi;</b></li>
-                <li>Praca w programach: <strong>Autodesk Robot Structural Analysis · RM-WIN · AutoCAD</strong></li>
-            </ul>
+      <section>
+        <h2 id="doswiadczenie-zawodowe">Doświaczenie zawodowe</h2>
+        <h3>Multikon Sp. z o.o.</h3>
+        <h4>Asystentka projektanta</h4>
+        <ul>
+          <li>
+            Wykonywanie rysunków wykonawczych
+            <span class="section_description"
+              >żelbetowych elementów prefabrykowanych</span
+            >
+            w programach <strong>AutoCad</strong> oraz
+            <strong>Tekla Structures</strong>
+          </li>
+        </ul>
+        <h3>Albis Biuro Budowlane</h3>
+        <h4>Asystentka projektanta</h4>
+        <ul>
+          <li>
+            Przygotowanie dokumentacji do pozwolenia na budowę oraz projektów
+            wykonawczych;
+          </li>
+          <li>
+            Wykonywanie rysunków budowlanych, głównie konstrukcyjnych:
+            <span class="section_description"
+              >konstrukcje stalowe; konstrukcje żelbetowe</span
+            >;
+          </li>
+          <li>Wykonywanie obliczeń statyczno-wytrzymałościowych;</li>
+          <li>
+            <b>Praca w zespole projektowym oraz samodzielna</b> (w zależności od
+            wielkości zadania);
+          </li>
+          <li>
+            <b
+              >Współpraca i kontakt z firmami architektonicznymi oraz
+              wykonawczymi;</b
+            >
+          </li>
+          <li>
+            Praca w programach:
+            <strong
+              >Autodesk Robot Structural Analysis · RM-WIN · AutoCAD</strong
+            >
+          </li>
+        </ul>
 
-            <h3>ZWIERZCHOWSKI, GRYGIERZEC, MICHALIK S.C. PRACOWNIA PROJ - BUDOWL - INSTALACYJNA</h3>
-            <h4>Asystentka projektanta / Praktykantka</h4>
-            <ul>
-                <li>Projekt budowlano-wykonawczy dobudowy stalowej hali montażowo - magazynowej w Zakładzie Wyrobów
-                    Metalowych
-                    Strumet Sp. z o.o. w Strumieniu;</li>
-                <li>Projekt budowlano-wykonawczy stalowej hali kooperacji w Zakładzie Wyrobów Metalowych Strumet Sp. z
-                    o.o. w
-                    Strumieniu.</li>
-            </ul>
-            <h3>Chemobudowa Kraków S.A.</h3>
-            <h4>Praktykantka</h4>
-            <ul>
-                <li>Uczestniczenie w pracach wykonawczych na budowie Domu Spokojnej Starości „Złota Jesień” w
-                Czechowicach-Dziedzicach.</li>
-            </ul>
-        </section>
-        <section class="section__background">
-            <h2 id="wyksztalcenie">Wykształcenie</h2>
-            <h3>Politechnika Krakowska im. Tadeusza Kościuszki</h3>
-            <h4>Budownictwo, Specjalizacja: Konstrukcje Budowlane i Inżynierskie</h4>
-            <ul><li><em>Starosta</em> grupy na III, IV i V roku;</li>
-                <li>Działalność w kole naukowym fizyki budowli</li>
-            </ul>
-        </section>
-        <section>
-            <h2 id="zainteresowania">Zainteresowania</h2>
-            <p>Architektura wnętrz, dobra książka, nauka języków obcych (ostatnio na tapecie niemiecki), gra na pianinie
-                (chwilowo zawieszona z racji braku pianina), psychologia, rowzwój dzieci, wycieczki górskie.
-            </p>
-        </section>
-        <hr>
-        <div>
-            <table id=schroniskaGórskie class="table">
-                <caption class="table__caption">Schroniska górskie Beskidu Śląskiego</caption>
-                <tr class="table__row">
-                    <th class="table__cell table__cell--header" scope="col">Nazwa schroniska</th>
-                    <th class="table__cell table__cell--header" scope="col">Wysokość</th>
-                    <th class="table__cell table__cell--header" scope="col">Strona internetowa</th>
-                    <th class="table__cell table__cell--header" scope="col">Telefon</th>
-                    <th class="table__cell table__cell--header" scope="col">Odwiedzone?</th>
-                </tr>
-                <tr class="table__row">
-                    <th class="table__cell table__cell--mainHeader" scope="row">Schronisko PTTK „Stożek”</th>
-                    <th class="table__cell">ok. 957 m n.p.m.</th>
-                    <th class="table__cell"><a class="table__row--link" target="_blank"
-                            rel="noreferrer noopener" href="https://stozek.com.pl">www.stozek.com.pl</a>
-                        </th>
-                    <th class="table__cell"><a class="table__row--link" href="tel:+48.338552710">33 855 27
-                            10</a></th>
-                    <th class="table__cell">❌</th>
-                </tr>
-                <tr class="table__row">
-                    <th class="table__cell table__cell--mainHeader" scope="row">Schronisko „Soszów”</th>
-                    <th class="table__cell">ok. 792 m n.p.m.</th>
-                    <th class="table__cell"><a class="table__row--link" rel="noreferrer noopener"
-                            target="_blank" href="http://soszow.1000lecie.pl/">www.soszow.1000lecie.pl</a></th>
-                    <th class="table__cell"><a class="table__row--link" href="tel:+48.338553046">33 855 30
-                            46</a></th>
-                    <th class="table__cell">❌</th>
-                </tr>
-                <tr class="table__row">
-                    <th class="table__cell table__cell--mainHeader" scope="row">Schronisko PTTK Przysłop pod
-                        Baranią
-                        Górą</th>
-                    <th class="table__cell">ok. 900 m n.p.m.</th>
-                    <th class="table__cell"><a class="table__row--link" rel="noreferrer noopener"
-                            target="_blank" href="https://przyslop.pl/">www.przyslop.pl</a></th>
-                    <th class="table__cell"><a class="table__row--link" href="tel:+48.338553715">33 855 37
-                            15</a></th>
-                    <th class="table__cell">❌</th>
-                </tr>
-                <tr class="table__row">
-                    <th class="table__cell table__cell--mainHeader" scope="row">Schronisko PTTK „Skrzyczne”
-                    </th>
-                    <th class="table__cell">ok. 1250 m n.p.m.</th>
-                    <th class="table__cell"><a class="table__row--link" rel="noreferrer noopener"
-                            target="_blank" href="http://www.skrzyczne.szczyrk.pl/pl/home/">www.skrzyczne.szczyrk.pl
-                            </a></th>
-                    <th class="table__cell"><a class="table__row--link" href="tel:+48.338178588">33 817 85
-                            88</a></th>
-                    <th class="table__cell">❌</th>
-                </tr>
-                <tr class="table__row">
-                    <th class="table__cell table__cell--mainHeader" scope="row">Schronisko PTTK „Klimczok”</th>
-                    <th class="table__cell">ok. 1060 m n.p.m.</th>
-                    <th class="table__cell"><a class="table__row--link" rel="noreferrer noopener"
-                            target="_blank" href="http://www.schroniskoklimczok.com.pl/">www.schroniskoklimczok.com.pl
-                            </a></th>
-                    <th class="table__cell"><a class="table__row--link" href="tel:+48.338145288">33 814 52
-                            88</a></th>
-                    <th class="table__cell">✅</th>
-                </tr>
-                <tr class="table__row">
-                    <th class="table__cell table__cell--mainHeader" scope="row">Schronisko PTTK „Szyndzielnia”
-                    </th>
-                    <th class="table__cell">ok. 1000 m n.p.m.</th>
-                    <th class="table__cell"><a class="table__row--link" rel="noreferrer noopener"
-                            target="_blank" href="https://www.szyndzielnia.com.pl/">www.szyndzielnia.com.pl</a></th>
-                    <th class="table__cell"><a class="table__row--link" href="tel:+48.338144047">33 814 40
-                            47,</a><br><a class="table__row--link" href="tel:+48.334706468">33 470 64 68</a></th>
-                    <th class="table__cell">✅</th>
-                </tr>
-                <tr class="table__row">
-                    <th class="table__cell table__cell--mainHeader" scope="row">Schronisko PTTK na Błatniej
-                    </th>
-                    <th class="table__cell">ok. 1000 m n.p.m.</th>
-                    <th class="table__cell"><a class="table__row--link" rel="noreferrer noopener"
-                            target="_blank" href="https://www.blatnia.pl/">www.blatnia.pl</a></th>
-                    <th class="table__cell"><a class="table__row--link" href="tel:+48.338536484">33 853 64
-                            84</a></th>
-                    <th class="table__cell">✅</th>
-                </tr>
-            </table>
-        </div>
+        <h3>
+          ZWIERZCHOWSKI, GRYGIERZEC, MICHALIK S.C. PRACOWNIA PROJ - BUDOWL -
+          INSTALACYJNA
+        </h3>
+        <h4>Asystentka projektanta / Praktykantka</h4>
+        <ul>
+          <li>
+            Projekt budowlano-wykonawczy dobudowy stalowej hali montażowo -
+            magazynowej w Zakładzie Wyrobów Metalowych Strumet Sp. z o.o. w
+            Strumieniu;
+          </li>
+          <li>
+            Projekt budowlano-wykonawczy stalowej hali kooperacji w Zakładzie
+            Wyrobów Metalowych Strumet Sp. z o.o. w Strumieniu.
+          </li>
+        </ul>
+        <h3>Chemobudowa Kraków S.A.</h3>
+        <h4>Praktykantka</h4>
+        <ul>
+          <li>
+            Uczestniczenie w pracach wykonawczych na budowie Domu Spokojnej
+            Starości „Złota Jesień” w Czechowicach-Dziedzicach.
+          </li>
+        </ul>
+      </section>
+      <section class="section__background">
+        <h2 id="wyksztalcenie">Wykształcenie</h2>
+        <h3>Politechnika Krakowska im. Tadeusza Kościuszki</h3>
+        <h4>
+          Budownictwo, Specjalizacja: Konstrukcje Budowlane i Inżynierskie
+        </h4>
+        <ul>
+          <li><em>Starosta</em> grupy na III, IV i V roku;</li>
+          <li>Działalność w kole naukowym fizyki budowli</li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="zainteresowania">Zainteresowania</h2>
+        <p>
+          Architektura wnętrz, dobra książka, nauka języków obcych (ostatnio na
+          tapecie niemiecki), gra na pianinie (chwilowo zawieszona z racji braku
+          pianina), psychologia, rowzwój dzieci, wycieczki górskie.
+        </p>
+      </section>
+      <hr />
+      <div>
+        <table id="schroniskaGórskie" class="table">
+          <caption class="table__caption">
+            Schroniska górskie Beskidu Śląskiego
+          </caption>
+          <tr class="table__row">
+            <th class="table__cell table__cell--header" scope="col">
+              Nazwa schroniska
+            </th>
+            <th class="table__cell table__cell--header" scope="col">
+              Wysokość
+            </th>
+            <th class="table__cell table__cell--header" scope="col">
+              Strona internetowa
+            </th>
+            <th class="table__cell table__cell--header" scope="col">Telefon</th>
+            <th class="table__cell table__cell--header" scope="col">
+              Odwiedzone?
+            </th>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__cell--mainHeader" scope="row">
+              Schronisko PTTK „Stożek”
+            </th>
+            <th class="table__cell">ok. 957 m n.p.m.</th>
+            <th class="table__cell">
+              <a
+                class="table__row--link"
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://stozek.com.pl"
+                >www.stozek.com.pl</a
+              >
+            </th>
+            <th class="table__cell">
+              <a class="table__row--link" href="tel:+48.338552710"
+                >33 855 27 10</a
+              >
+            </th>
+            <th class="table__cell">❌</th>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__cell--mainHeader" scope="row">
+              Schronisko „Soszów”
+            </th>
+            <th class="table__cell">ok. 792 m n.p.m.</th>
+            <th class="table__cell">
+              <a
+                class="table__row--link"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="http://soszow.1000lecie.pl/"
+                >www.soszow.1000lecie.pl</a
+              >
+            </th>
+            <th class="table__cell">
+              <a class="table__row--link" href="tel:+48.338553046"
+                >33 855 30 46</a
+              >
+            </th>
+            <th class="table__cell">❌</th>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__cell--mainHeader" scope="row">
+              Schronisko PTTK Przysłop pod Baranią Górą
+            </th>
+            <th class="table__cell">ok. 900 m n.p.m.</th>
+            <th class="table__cell">
+              <a
+                class="table__row--link"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://przyslop.pl/"
+                >www.przyslop.pl</a
+              >
+            </th>
+            <th class="table__cell">
+              <a class="table__row--link" href="tel:+48.338553715"
+                >33 855 37 15</a
+              >
+            </th>
+            <th class="table__cell">❌</th>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__cell--mainHeader" scope="row">
+              Schronisko PTTK „Skrzyczne”
+            </th>
+            <th class="table__cell">ok. 1250 m n.p.m.</th>
+            <th class="table__cell">
+              <a
+                class="table__row--link"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="http://www.skrzyczne.szczyrk.pl/pl/home/"
+                >www.skrzyczne.szczyrk.pl
+              </a>
+            </th>
+            <th class="table__cell">
+              <a class="table__row--link" href="tel:+48.338178588"
+                >33 817 85 88</a
+              >
+            </th>
+            <th class="table__cell">❌</th>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__cell--mainHeader" scope="row">
+              Schronisko PTTK „Klimczok”
+            </th>
+            <th class="table__cell">ok. 1060 m n.p.m.</th>
+            <th class="table__cell">
+              <a
+                class="table__row--link"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="http://www.schroniskoklimczok.com.pl/"
+                >www.schroniskoklimczok.com.pl
+              </a>
+            </th>
+            <th class="table__cell">
+              <a class="table__row--link" href="tel:+48.338145288"
+                >33 814 52 88</a
+              >
+            </th>
+            <th class="table__cell">✅</th>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__cell--mainHeader" scope="row">
+              Schronisko PTTK „Szyndzielnia”
+            </th>
+            <th class="table__cell">ok. 1000 m n.p.m.</th>
+            <th class="table__cell">
+              <a
+                class="table__row--link"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://www.szyndzielnia.com.pl/"
+                >www.szyndzielnia.com.pl</a
+              >
+            </th>
+            <th class="table__cell">
+              <a class="table__row--link" href="tel:+48.338144047"
+                >33 814 40 47,</a
+              ><br /><a class="table__row--link" href="tel:+48.334706468"
+                >33 470 64 68</a
+              >
+            </th>
+            <th class="table__cell">✅</th>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell table__cell--mainHeader" scope="row">
+              Schronisko PTTK na Błatniej
+            </th>
+            <th class="table__cell">ok. 1000 m n.p.m.</th>
+            <th class="table__cell">
+              <a
+                class="table__row--link"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://www.blatnia.pl/"
+                >www.blatnia.pl</a
+              >
+            </th>
+            <th class="table__cell">
+              <a class="table__row--link" href="tel:+48.338536484"
+                >33 853 64 84</a
+              >
+            </th>
+            <th class="table__cell">✅</th>
+          </tr>
+        </table>
+      </div>
 
-        <footer class="footer">Autorem treści jest Dominika Buczek-Szkowron. Zabrania się rozpowszechniania,
-            kopiowania, udostępniania treści bez zgody Autora 😉</footer>
+      <footer class="footer">
+        Autorem treści jest Dominika Buczek-Szkowron. Zabrania się
+        rozpowszechniania, kopiowania, udostępniania treści bez zgody Autora 😉
+      </footer>
     </main>
-</body>
-
+  </body>
 </html>
